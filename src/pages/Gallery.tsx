@@ -70,10 +70,10 @@ export default function GalleryPage() {
             <Camera size={14} /> Real Relocation Projects
           </span>
           <h1 className="hero-title text-3xl sm:text-4xl md:text-5xl font-black mb-5 font-[Manrope] tracking-tight">
-            Our Work & Fleet in Action
+            Our Packing Work in Action
           </h1>
           <p className="hero-desc text-slate-100 text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8 font-medium">
-            Explore authentic images from our recent moves across Navi Mumbai, Mumbai, Thane, and intercity destinations. Every package is sealed with care and transported safely.
+            See our packing work and service photos from household moves. Every item is prepared with care for safe handling and transport.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -125,11 +125,11 @@ export default function GalleryPage() {
                 className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-[#E5EAF2] transition-all duration-300 cursor-pointer flex flex-col transform hover:-translate-y-1.5"
               >
                 {/* Image Container */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                <div className="relative aspect-[3/4] overflow-hidden bg-slate-100">
                   <SafeImage
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                     <span className="text-white text-xs font-semibold flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-md">

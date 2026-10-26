@@ -8,7 +8,43 @@ export interface GalleryItem {
   location: string;
 }
 
-export const galleryItems: GalleryItem[] = [
+const packingWorkDetails = [
+  ['Household cartons wrapped for moving', 'Boxes and furniture protected with stretch film before transport.'],
+  ['Carefully wrapped household furniture', 'Protective layers help keep furniture clean and secure during a move.'],
+  ['Tall furniture secured with stretch wrap', 'A large household item prepared for safe loading and delivery.'],
+  ['Furniture protected for transit', 'Wrapped household furniture staged and ready for the next step of the move.'],
+  ['Upright furniture wrapped for shifting', 'Protective film is applied around the furniture before it is moved.'],
+  ['Sofa and furniture protection', 'Soft furnishings and larger items are wrapped to help prevent scuffs.'],
+  ['Furniture wrapped and ready for loading', 'A close view of the protective wrapping used during household packing.'],
+  ['Wrapped furniture staged for dispatch', 'Several protected items are organized together before loading.'],
+  ['Large furniture packed for a move', 'An upright item is covered with protective material for transport.'],
+  ['Small household item carefully packed', 'A compact item receives a protective outer layer before shifting.'],
+  ['Wrapped household goods grouped together', 'Packed items are kept together and protected ahead of loading.'],
+  ['Table and furniture packing', 'A household surface is protected with wrapping before it is moved.'],
+  ['Appliance and carton protection', 'Household goods are wrapped and secured for safer handling.'],
+  ['Protective foam and wrap for delicate goods', 'Additional cushioning helps protect fragile household items.'],
+  ['A full set of packed household goods', 'Furniture and cartons are wrapped and arranged for transport.'],
+  ['Sealed carton ready for shifting', 'A box is secured and labelled for careful handling.'],
+  ['Large item wrapped before loading', 'Protective film covers the full item to help reduce handling marks.'],
+  ['Wrapped household goods organized for moving', 'Packed items are kept together as the home is prepared for shifting.'],
+  ['Sofa protected with moving wrap', 'A long furniture piece is covered to help protect its finish in transit.'],
+  ['Protective cover for a household surface', 'A household item is covered with a protective layer before handling.'],
+  ['Furniture and cartons secured for transport', 'Wrapped items are grouped and prepared for the moving vehicle.'],
+  ['Wrapped furniture and appliances', 'Household goods receive protective wrapping before they leave the home.'],
+  ['Fully wrapped furniture ready for delivery', 'A final packed item is secured for careful loading and transport.'],
+] as const;
+
+const packingWorkItems: GalleryItem[] = packingWorkDetails.map(([title, description], index) => ({
+  id: `packing-work-${index + 1}`,
+  title,
+  category: 'packing',
+  categoryLabel: 'Packing & Loading',
+  image: `/images/packing-work/packing-${String(index + 1).padStart(2, '0')}.jpeg`,
+  description,
+  location: 'Shri Swami Samarth Packers & Movers',
+}));
+
+const stockGalleryItems: GalleryItem[] = [
   {
     id: 'gal-1',
     title: 'Complete Household Shifting in Navi Mumbai',
@@ -154,3 +190,5 @@ export const galleryItems: GalleryItem[] = [
     location: 'Seawoods, Navi Mumbai',
   },
 ];
+
+export const galleryItems: GalleryItem[] = [...packingWorkItems, ...stockGalleryItems];

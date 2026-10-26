@@ -110,13 +110,12 @@ export default function HomePage() {
             <div className="relative hidden lg:block">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: '4/3' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85"
-                  alt="Professional movers carefully packing household items in Navi Mumbai"
-                  className="img-cover w-full h-full"
+                  src="/images/packing-work/packing-15.jpeg"
+                  alt="Household furniture and belongings wrapped for a move"
+                  className="w-full h-full object-contain bg-slate-100"
                   loading="eager"
                   fetchPriority="high"
                 />
-                <div className="absolute inset-0 overlay-navy"/>
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="floating-badge">
                     <div className="flex items-center gap-3">
@@ -273,16 +272,45 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* PACKING PROCESS VIDEO */}
+      <section className="section-padding bg-[#F5F7FB]">
+        <div className="container-wide">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="eyebrow">See How We Work</span>
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#17233D] mb-4">
+              Hamara Packing Process Step by Step
+            </h2>
+            <p className="text-[#667085] text-lg leading-relaxed">
+              Watch how we prepare and pack your belongings with care before a move. The original video audio is included.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto overflow-hidden rounded-2xl bg-black shadow-2xl ring-1 ring-black/10">
+            <video
+              className="block w-full aspect-video"
+              controls
+              playsInline
+              preload="metadata"
+              poster="/videos/packing-process-poster.jpg"
+              aria-label="Hamara packing process step by step video, with audio"
+            >
+              <source src="/videos/packing-process.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURED SERVICE — HOUSE SHIFTING */}
       <section className="section-padding bg-[#F5F7FB]">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-                <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
-                  alt="Professional movers packing household furniture for house shifting"
-                  className="img-cover w-full h-full"
+                  <img
+                  src="/images/packing-work/packing-01.jpeg"
+                  alt="Household cartons and furniture wrapped for shifting"
+                  className="w-full h-full object-contain bg-slate-100"
                   loading="lazy"
                 />
               </div>
@@ -303,6 +331,9 @@ export default function HomePage() {
               </ul>
               <Link to="/services/house-shifting" className="btn-primary">
                 Explore House Shifting <ArrowRight size={14}/>
+              </Link>
+              <Link to="/gallery" className="inline-flex items-center gap-2 ml-3 font-bold text-[#092B70] hover:text-[#F47721] transition-colors">
+                See Our Packing Photos <ArrowRight size={14}/>
               </Link>
             </div>
           </div>

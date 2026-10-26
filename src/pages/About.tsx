@@ -40,9 +40,9 @@ export default function AboutPage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] hidden lg:block">
               <img
-                src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?w=800&q=80"
-                alt="Shri Swami Samarth Packers & Movers team assisting with household relocation in Navi Mumbai"
-                className="img-cover w-full h-full"
+                src="/images/packing-work/packing-15.jpeg"
+                alt="Household goods wrapped and prepared for a move"
+                className="w-full h-full object-contain bg-slate-100"
               />
             </div>
           </div>
@@ -117,9 +117,9 @@ export default function AboutPage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
-                alt="Professional packing process for household relocation"
-                className="img-cover w-full h-full"
+                src="/images/packing-work/packing-06.jpeg"
+                alt="Furniture protected with moving wrap"
+                className="w-full h-full object-contain bg-slate-100"
                 loading="lazy"
               />
             </div>
