@@ -6,7 +6,7 @@ export interface FAQ {
 export const homeFaqs: FAQ[] = [
   {
     question: 'How can I get a moving quotation?',
-    answer: 'You can request a quotation by calling us at 9833951313 or 9152749356, sending us a WhatsApp message, or filling in the quote request form on our website. Share your pickup location, destination, approximate household size, and preferred moving date, and our team will get back to you.',
+    answer: 'You can request a quotation by calling us at 9833951313 or 9324193636, sending us a WhatsApp message, or filling in the quote request form on our website. Share your pickup location, destination, approximate household size, and preferred moving date, and our team will get back to you.',
   },
   {
     question: 'Do you provide household packing services?',
@@ -34,6 +34,6 @@ export const homeFaqs: FAQ[] = [
   },
   {
     question: 'How can I contact Shri Swami Samarth Packers & Movers?',
-    answer: 'You can reach us by phone at 9833951313 or 9152749356, by WhatsApp at 9833951313, or through the contact form on our website. We are based in Digha, Navi Mumbai, Maharashtra.',
+    answer: 'You can reach us by phone at 9833951313 or 9324193636, by WhatsApp at 9833951313, or through the contact form on our website. We are based in Digha, Navi Mumbai, Maharashtra.',
   },
 ];
